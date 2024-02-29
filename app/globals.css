@@ -34181,11 +34181,7 @@ h6 {
   color: var(--bs-primary);
   transition: all 0.2s ease-in-out;
 }
-.card {
-  /* --bs-card-box-shadow: var(--bs-root-card-box-shadow);
-  --bs-card-border-color: var(--bs-root-card-border-color);
-  border: 1px solid var(--bs-card-border-color); */
-}
+
 .card .card-header {
   display: flex;
   justify-content: space-between;

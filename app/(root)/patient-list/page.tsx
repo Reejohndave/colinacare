@@ -1,6 +1,10 @@
 
 import React from "react";
 
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+
+
+
 const PatientList = () =>  {
     return (
     
@@ -21,18 +25,18 @@ const PatientList = () =>  {
               </div>
             </div>
             <div className="flex justify-between mt-3">
-              <button
-                type="button"
-                className="bg-[#1B84FF] rounded-xl p-2 text-teal-50 w-full h-[50px] hover:bg-blue-300"
-                data-bs-toggle="modal"
-                data-bs-target="#kt_modal_add_customer"
-              >
-                Add Patient
-              </button>
+            <button
+              type="button"
+              className="bg-[#1B84FF] rounded-xl p-2 text-teal-50 w-full h-[50px]  hover:bg-blue-300 "
+              data-bs-toggle="modal"
+              data-bs-target="#kt_modal_add_customer"
+            >
+              Add Patient
+            </button>
   
               <button
                 type="button"
-                className="bg-[#DB3956] rounded-xl p-2 text-teal-50 w-full h-[50px] ml-5 hover:bg-red-500"
+                className="bg-[#DB3956] rounded-xl p-2 text-teal-50 w-full h-[50px] ml-5 hover:bg-red-300"
                 data-bs-toggle="modal"
                 data-bs-target="#kt_modal_add_customer"
               >
@@ -66,7 +70,7 @@ const PatientList = () =>  {
                 <td>
                   <a
                     href="#"
-                    className="text-gray-600 text-hover-primary mb-1 opacity-60"
+                    className="text-gray-800 text-hover-primary mb-1 opacity-60"
                   >
                     Drake Ramos
                   </a>
@@ -126,7 +130,7 @@ const PatientList = () =>  {
                   </a>
                 </td>
                 <td>
-                  <a href="#" className="text-gray-600 text-hover-primary mb-1">
+                  <a href="#" className="text-gray-800 text-hover-primary mb-1">
                     Drake Ramos
                   </a>
                 </td>
@@ -413,6 +417,23 @@ const PatientList = () =>  {
             </tbody>
           </table>
         </div>
+        <Dropdown>
+      <DropdownTrigger>
+        <Button 
+          variant="bordered" 
+        >
+          Open Menu
+        </Button>
+      </DropdownTrigger>
+      <DropdownMenu aria-label="Static Actions">
+        <DropdownItem key="new">New file</DropdownItem>
+        <DropdownItem key="copy">Copy link</DropdownItem>
+        <DropdownItem key="edit">Edit file</DropdownItem>
+        <DropdownItem key="delete" className="text-danger" color="danger">
+          Delete file
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
       </div>
     
     );
