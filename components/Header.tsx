@@ -18,18 +18,17 @@ const Header = () => {
 
               <div className="form-group w-[1000px] flex justify-end ">
 				<div className="input-icon w-[500px]">
-					<input type="text" className="form-control" placeholder="Search..."/>
+					<input type="text" className="form-control" placeholder="Search... Bar"/>
 					<span><i className="flaticon2-search-1 icon-md"></i></span>
 				</div>
             </div>
           </div>
+
         </div>
       </div>
-    </div>
-    	
+    </div>   	
 			</div>
             </div>                 
-  
   );
 };
 
