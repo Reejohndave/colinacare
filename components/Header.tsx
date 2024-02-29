@@ -21,6 +21,22 @@ const Header = () => {
 					<input type="text" className="form-control" placeholder="Search..."/>
 					<span><i className="flaticon2-search-1 icon-md"></i></span>
 				</div>
+
+        <div className="app-navbar-item" id="kt_header_user_menu_toggle">
+									
+									<div className="btn btn-flex align-items-center bg-hover-white bg-hover-opacity-10 py-2 ps-3 pe-1" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+										
+										<div className="symbol symbol-30px symbol-md-40px">
+											<img src="/img/prof.png" alt="image" />
+										</div>
+                    <div className="d-none d-md-flex flex-column align-items-end justify-content-center me-2 me-md-7">
+											<span className="text-white fs-8 fw-bold lh-1 mb-1 flex">DRAKE RAMOS</span>
+											<span className="text-white fs-8 opacity-75 fw-semibold lh-1"></span>
+										</div>
+										
+									</div>
+                </div>
+
             </div>
           </div>
 
