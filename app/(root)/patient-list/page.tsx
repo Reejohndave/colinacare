@@ -1,5 +1,6 @@
 
 import React from "react";
+import Link from "next/link"
 
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 
@@ -24,25 +25,30 @@ const PatientList = () =>  {
                 />
               </div>
             </div>
-            <div className="flex justify-between mt-3">
-            <button
-              type="button"
-              className="bg-[#1B84FF] rounded-xl p-2 text-teal-50 w-full h-[50px]  hover:bg-blue-300 "
-              data-bs-toggle="modal"
-              data-bs-target="#kt_modal_add_customer"
-            >
-              Add Patient
-            </button>
-  
-              <button
-                type="button"
-                className="bg-[#DB3956] rounded-xl p-2 text-teal-50 w-full h-[50px] ml-5 hover:bg-red-300"
-                data-bs-toggle="modal"
-                data-bs-target="#kt_modal_add_customer"
-              >
-                Export to PDF
-              </button>
-            </div>
+            <div className="flex justify-between mt-3">  
+  <Link href="/patient-demographic">
+    <button 
+      type="button"
+      className="bg-[#1B84FF] rounded-xl p-2 text-teal-50 w-full h-[50px] hover:bg-blue-300"
+      data-bs-toggle="modal"
+      data-bs-target="#kt_modal_add_customer"
+    >
+      Add Patient
+    </button>
+  </Link>
+  <div className="flex justify-between mb-6 ml-5">  
+  <Link href="/patient-demographic">
+    <button 
+      type="button"
+      className="bg-[#DB3956] rounded-xl p-2 text-teal-50 w-full h-[50px] hover:bg-red-300"
+      data-bs-toggle="modal"
+      data-bs-target="#kt_modal_add_customer"
+    >
+      Export PDF
+    </button>
+  </Link>
+</div>
+</div>
           </div>
   
           <table className="table align-middle text-xl ml-5 table-row-dashed">

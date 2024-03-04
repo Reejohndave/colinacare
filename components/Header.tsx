@@ -4,10 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-
-
-
-
 const Header = () => {
   return (
     <div className="app-page flex-column flex-column-fluid bg-[#007C85]">
