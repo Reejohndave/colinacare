@@ -31,14 +31,14 @@ const PatientList = () => {
           <div className="flex items-center justify-center gap-[20px]">
             <button
               type="button"
-              className="px-[20px] py-[11px] bg-[#1B84FF] rounded-[7px] text-white"
+              className="px-[20px] py-[11px] bg-[#1B84FF] rounded-[7px] text-[#ffff]"
             >
-              Add Patient
+              + Add Patient
             </button>
 
             <button
               type="button"
-              className="px-[20px] py-[11px] bg-[#F8285A] rounded-[7px] text-white"
+              className="px-[20px] py-[11px] bg-[#F8285A] rounded-[7px] text-[#ffff]"
             >
               Export to PDF
             </button>
@@ -60,12 +60,12 @@ const PatientList = () => {
             <tr>
               <td></td>
               <td>
-                <a href="apps/customers/view.html" className=" mb-1">
+                <a href="apps/customers/view.html" className=" mb-1 text-[#071437]">
                   8127423928
                 </a>
               </td>
               <td>
-                <a href="#" className="mb-1">
+                <a href="#" className="mb-1 text-[#071437]">
                   Drake Ramos
                 </a>
               </td>
@@ -116,12 +116,12 @@ const PatientList = () => {
             <tr>
               <td></td>
               <td>
-                <a href="apps/customers/view.html" className=" mb-1">
+                <a href="apps/customers/view.html" className=" mb-1 text-[#071437]">
                   8127423928
                 </a>
               </td>
               <td>
-                <a href="#" className=" mb-1">
+                <a href="#" className=" mb-1 text-[#071437]">
                   Drake Ramos
                 </a>
               </td>
@@ -172,12 +172,12 @@ const PatientList = () => {
             <tr>
               <td></td>
               <td>
-                <a href="apps/customers/view.html" className=" mb-1">
+                <a href="apps/customers/view.html" className=" mb-1 text-[#071437]">
                   8127423928
                 </a>
               </td>
               <td>
-                <a href="#" className=" mb-1">
+                <a href="#" className=" mb-1 text-[#071437]">
                   Drake Ramos
                 </a>
               </td>
@@ -228,12 +228,12 @@ const PatientList = () => {
             <tr>
               <td></td>
               <td>
-                <a href="apps/customers/view.html" className=" mb-1">
+                <a href="apps/customers/view.html" className=" mb-1 text-[#071437]">
                   8127423928
                 </a>
               </td>
               <td>
-                <a href="#" className=" mb-1">
+                <a href="#" className=" mb-1 text-[#071437]">
                   Drake Ramos
                 </a>
               </td>
@@ -284,12 +284,12 @@ const PatientList = () => {
             <tr>
               <td></td>
               <td>
-                <a href="apps/customers/view.html" className=" mb-1">
+                <a href="apps/customers/view.html" className=" mb-1 text-[#071437]">
                   8127423928
                 </a>
               </td>
               <td>
-                <a href="#" className=" mb-1">
+                <a href="#" className=" mb-1 text-[#071437]">
                   Drake Ramos
                 </a>
               </td>
@@ -340,12 +340,12 @@ const PatientList = () => {
             <tr>
               <td></td>
               <td>
-                <a href="apps/customers/view.html" className=" mb-1">
+                <a href="apps/customers/view.html" className=" mb-1 text-[#071437]">
                   8127423928
                 </a>
               </td>
               <td>
-                <a href="#" className=" mb-1">
+                <a href="#" className=" mb-1 text-[#071437]">
                   Drake Ramos
                 </a>
               </td>
