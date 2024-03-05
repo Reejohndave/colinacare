@@ -10,19 +10,18 @@ const Login = () => {
 
       <div className="flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1 ">
         <div className="flex flex-center flex-column flex-lg-row-fluid pb-11">
-          <div className="w-lg-500px p-10 pb-10">
+          <div className="w-lg-700px p-40 pb-10">
             <form
               className="w-100"
               id="kt_sign_in_form"
               data-kt-redirect-url="index.html"
               action="#"
             >
-              <div className="mb-10">
-                <h1 className="text-[#007C85] font-normal">WELCOME TO</h1>
-                <div className="text-[#007C85] fw-semibold text-[40px]">
-                  COLINAHEALTH
-                </div>
-              </div>
+              <div className="mb-10 flex justify-center items-center">
+  <div className="text-[#007C85] fw-thin text-[40px]">
+    Sign in
+  </div>
+</div>
 
               <div className="fv-row mb-8">
                 <input
