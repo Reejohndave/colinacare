@@ -6,7 +6,7 @@ const Login = () => {
     <main className="flex flex-col md:flex-row items-center justify-center h-screen relative">
       <div className=" w-[963.34px] h-full relative">
         <div className="flex flex-col items-center justify-center w-full h-full gap-8">
-          <img src="Bimage.png" className="w-full h-full object-cover" />
+          <img src="/img/Bimage.png" className="w-full h-full object-cover" />
         </div>
       </div>
 
@@ -20,7 +20,7 @@ const Login = () => {
               action="#"
             >
               <div className="mb-10 flex justify-center items-center">
-                <div className="text-[#007C85] fw-thin text-[30px]">
+                <div className="text-[#007C85] fw-thin text-[40px]">
                   Sign in
                 </div>
               </div>
@@ -48,9 +48,12 @@ const Login = () => {
                   <input type="checkbox" />
                   <span className="text-md">Remember me</span>
                 </div>
-                <Link href="/forgot-password" className="text-[#071437] text-md no-underline hover:underline">
+                <a
+                  href=""
+                  className="text-md no-underline hover:underline ... "
+                >
                   Forgot Password?
-                </Link>
+                </a>
               </div>
 
               <Link href="/patient-list">
@@ -73,4 +76,4 @@ const Login = () => {
     </main>
   );
 };
-export default Login; 
+export default Login;
