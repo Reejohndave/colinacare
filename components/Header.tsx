@@ -1,8 +1,9 @@
 "use client";
-
+import Link from "next/link";
 import React, { useState } from "react";
 import { IoNotifications } from "react-icons/io5";
 import Image from "next/image";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
           </div>
 
           <div className="flex align-items-center">
-            <div className="flex align-items-center px-5   ">
+            <div className="flex align-items-center px-5">
               <img src="/img/gen021.svg" className="fs-3 position-absolute ms-5" width={20} />
               <input
                 type="text"
@@ -50,8 +51,32 @@ const Header = () => {
               </div>
 
               {isOpen && (
-                <div className="bg-white text-black -[100px] h-[50px] absolute bottom-[-50px] right-0 ">
-                  DropDown Content
+                <div className="bg-body shadow-sm rounded-md text-black w-[190px] h-[170px] absolute bottom-[-183px] right-0 z-50 flex flex-col py-4">
+                  <div className="flex px-3 items-center">
+                    <div className="symbol symbol-35px me-5">
+                      <img src="/img/prof.png" alt="image" />
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="fw-bold text-md">Drake Ramos</div>
+                      <p className="fw-semibold text-muted text-hover-primary text-sm">
+                        drake@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                  <div className="separator my-1"></div>
+                  <div className="font-normal text-[16px]">
+                    <div className="px-3 py-1 hover:bg-[#007C85] hover:opacity-60 hover:rounded-md hover:text-white text-black">
+                      Language
+                    </div>
+                    <div className="px-3 py-1 hover:bg-[#007C85] hover:opacity-60 hover:rounded-md hover:text-white">
+                      Settings
+                    </div>
+                    <Link href="/">
+                    <div className="px-3 py-1 hover:bg-[#007C85] hover:opacity-60 hover:rounded-md hover:text-white  text-[#071437]">
+                      Sign Out
+                    </div>
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
